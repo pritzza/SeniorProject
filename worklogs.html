@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Learning x86</title>
+    <title>Interactive Media Engine Development</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -12,7 +12,7 @@
         <ul id="list">
             
             <b>
-            Learning x86:
+                Interactive Media Engine Development:
             </b>
 
             <li><a href="index.html">Home</a></li>
@@ -20,6 +20,8 @@
             <li><a href="research.html">Research</a></li>
             <li><a href="worklogs.html">Worklogs</a></li>
             <li><a href="visual.html">Visual</a></li>
+            <li><a href="documents.html">Documents</a></li>
+
         </ul>
     </div>
 </div>
@@ -29,9 +31,173 @@
     <h1>Worklogs</h1>
 
     <div id="text">
-        <b>This is the work I've put in:</b> <br><br>
-        
-        <p>I need to date these events, but started watching some lectures and other youtube tutorials as well as reading Jorgensen's textbook.</p>
+        <br><br>
+        <a href="https://github.com/pritzza/Pritzza-Engine/commits/main"> <b>(Further Updates)</b> </a>
+
+        <br><br> <b>Worklog 20 Bushes (May 22, 2021):</b> <br><br>
+        <p> 
+            This is something I also started working on over that May 18 - May 21 bit, but focus most on today.
+            I wanted to develop some gameplay into the engine example with bushes. I want bushes
+            to be something similar to tall grass in RPGs, where you can find random encounters in them, but be procedurally generated. However,
+            there's a catch! The catch being, that the bushes are grouped together, such that every patch of bushes is unique from one-another 
+            in some way, whether it be different spawn rates or some other property.
+        </p>
+        <br><br> <b>Worklog 19 Terrain Generation 2: Going Isometric (May 21, 2021):</b> <br><br>
+        <p> 
+            On the 17th, after I had finished working on the engine for the day, I found someone else's project: 2D isometric terrain editor, and it blew my socks off.
+            Super charged me with motivation to make my engine support isometric tilemaps, so I spent all of the 18th and 19th implementing that for the first time.
+            Given there were some bumps in the road, I was incredibly happy with the result as it had this awesome look. With it, I totally redid all of the terrain 
+            generation code, adding grass, lakes, sand, and mountains [PICTURES INCLUDED IN THE LINK].
+            <a href="https://github.com/pritzza/Pritzza-Engine/commit/3e2e3d8c659e6e312d24f9bd65f119faa53e52dc">(deleted 498 lines and added 259 new lines days, 1,949 lines in total).</a>
+        </p>
+        <br><br> <b>Worklog 18 Terrain Generation (May 17, 2021):</b> <br><br>
+        <p> 
+            I spent the entire day continuing my work yesterday better implementing the natural terrain generation by adding new types of tiles
+            such as logs and lilies, and I spent the entire day tweaking how the terrain looked. I was super happy with the results as by the end, my two
+            little frogs had an entire lake filled with logs and lilies to explore.
+        </p>
+        <br><br> <b>Worklog 17 Perlin Noise (May 16, 2021):</b> <br><br>
+        <p> 
+            This was really fun! After implementing what I thought to be a temporarily satasfactory animation system,
+            I thought it was about time I fleshed out the TileMap class. And so I did! Never before had I done anything with 
+            perlin noise, however I've always wanted to, so I got out of my comfort zone a little bit, and found an open 
+            source implementation for perlin noise on Github and just added it to my code for some really pretty looking
+            natural terrain generation!
+            <a href="https://github.com/pritzza/Pritzza-Engine/commit/2032028e305c053c0ad50b7b417bd0ac8a8833a7">(deleted 28 lines and added 123 new lines days, 1,710 lines in total).</a>
+        </p>
+        <br><br> <b>Worklog 16 Animated Sprites 2 (May 14, 2021):</b> <br><br>
+        <p> 
+            After a pretty productive day, I went in motivated to finish the AnimatedSprite class so that I could have animation in my game.
+            It went really smoothly and I was able to implement what I think to be a mostly simple system with alot of room for improvement. 
+            However I am being super cautious of going down the same rabbit hole as I did for the Camera, where I would spent countless hours
+            slaving away at miniscule detailts for little, if intangible progress. I ramble though. To summarize, the media engine has animated sprites 
+            which is cool.
+            <a href="https://github.com/pritzza/Pritzza-Engine/commit/814b9830b1611065e4d893081a914e73028afcf5">(deleted 122 lines and added 463 new lines days, 1,615 lines in total).</a>
+        </p>
+        <br><br> <b>Worklog 15 Animated Sprites (May 13, 2021):</b> <br><br>
+        <p> 
+            I was super fed up with how much time and effort it took to get Camera panning to work, that I went all of April and half of May without touching
+            the interactive media engine. However, today I decided to open it up and give it another shot. I had no idea what I was supposed to do after finishing
+            panning, so i just picked something random to do like finally get animated sprites. I hoped this wasn't going to be as taxing as working on the Camera class,
+            and it wasn't fortunatley. I had made animated sprites once before, though very roughly. Given it was my second time, and I had done a little research 
+            before hand, I was able to write most of an AnimatedSprite class (which inherits from the Sprite class) in one day.
+        </p>
+        <br><br> <b>Worklog 14 More Camera Work (Mar 31, 2021):</b> <br><br>
+        <p> 
+            It took nearly the rest of March and a hand full of attempts to implement some more Camera upgrades. I spent a frustrating amount of 
+            time unsucessfully getting two different types of camera pans to work. It took some review of triginomotry, some STL math.h documentation reading,
+            rewriting the same code a bunch, and the realization that I was doing everything completely wrong for several days before I asked for help and 
+            got an absolutely immaculate two line solution to all my problems from a friend. Regardless, now the Camera can pan at a linear or logarithmic speed
+            from any point or GameObject to another at any speed.
+            <a href="https://github.com/pritzza/Pritzza-Engine/commit/410e1091b0b47ac0ce16afe529e36e4fc45cbae6">(deleted 42 lines and added 177 new lines days, 1,264 lines in total).</a>
+        </p>
+        <br><br> <b>Worklog 13 Camera Work (Mar 20, 2021):</b> <br><br>
+        <p> 
+            I decked out the list of features of the camera. I added camera GameObject and Entity tracking, allowing the camera to follow 
+            the player or anything else in the game, additionally, I included a simple but efficient optimization: clipping! Clipping is just when you 
+            remove objects from the render queue of a scene that aren't visible. For my interactive media engine, this just meant and if statement
+            checking if any of a Sprite's bounds intersect with the frame of the Camera. Implementing it was pretty easy and just really stuck out to 
+            me after a productivity drought.
+            <a href="https://github.com/pritzza/Pritzza-Engine/commit/410e1091b0b47ac0ce16afe529e36e4fc45cbae6">(deleted 35 lines and added 96 new lines days, 1,129 lines in total).</a>
+        </p>
+        <br><br> <b>Worklog 12 Tilemap (Mar 5, 2021):</b> <br><br>
+        <p> 
+            I got kinda fed up with doing stuff like sprites, collision, entities, and refactoring, so I thought it would be cool to finally get 
+            something more than a few squares on the screen. Anyways, I was basically able to design a Tile and Tilemap class I was happy with on the spot 
+            because I've written a few Tilemap and Tile classes before. Dispite the lack of planning with my design around this time, I can still say pretty 
+            confidently that it is still the best, cleanest and most comprehensive design I have written before and that I was able to get it working like a 
+            charm in just an hour or two.
+            <a href="https://github.com/pritzza/Pritzza-Engine/commit/7bf7078db79f5bc9c07da13974c3e2aac91f5a87">(deleted 155 lines and added 313 new lines, 1,165 lines in total).</a>
+        </p>
+        <br><br> <b>Worklog 11 Refactor (Mar 4, 2021):</b> <br><br>
+        <p> 
+            Having ripped out most of my hair yesterday from an absurd bug with Sprite's and AABB's sf::Vector2f position references caused by
+            copy constructing/assigning smart pointers, I had written so much spagetti code from trying to debug the thing that I decided a refactor was
+            necessary. I totally refactored Sprite, AABB, Entity, and cleaned up all sorts of various code across all my classes. Something noteworthy
+            is that I made the executive decision to break up my Entity class from being one giant class, to a GameObject class and an Entity class,
+            the key difference between the two being the separation of physics.
+        </p>
+        <br><br> <b>Worklog 10 Entities (Mar 3, 2021):</b> <br><br>
+        <p> 
+            I had come to the conslusion, that it makes most sense to me that entities should be responsible for their own collision,
+            and that sprites wouldnt conflict with that at all. Taking that knowledge, I wrote a quick AABB class, something I had also 
+            never done sucessfully before, and created an Entity class with data members Sprite, AABB, and sf::Vector2f for position. 
+            After doing that though, there were some collision bugs I needed to resolve from yesterday which ended up taking alot of time and patience.
+            <a href="https://github.com/pritzza/Pritzza-Engine/commit/0ea9dd3a69857a0ab44e7170c30eb3aa5d772c82">(deleted 23 lines and added 338 new lines across the past 3 days, 1,007 lines in total).</a>
+        </p>
+        <br><br> <b>Worklog 9 Sprites (Mar 2, 2021):</b> <br><br>
+        <p> 
+            Alot of today was spent discussing, researching, and thinking on the best and most logical long term solution for the class hierarchy
+            and structure of my program. I was wondering if a Sprite class should store its on Axis Alligned Bounding Box (AABB), or if entities should store their own AABBs.
+            After some consultation, I wrote a quick SFML Sprite wrapper class called Sprite and got to work planning for what has historically been
+            my biggest barrier in terms of previous project design and structure: entities.
+        </p>
+        <br><br> <b>Worklog 8 Input (Mar 1, 2021):</b> <br><br>
+        <p> 
+            After getting buttons mostly working yesterday, I decided to continue and get a Keyboard class set up to emulate what other than a keyboard.
+            This Keyboard class would have a multitude of buttons on it to represent the keys on a keyboard, and within each Button class, or key, was
+            stored the state of the Button, whether it was just tapped, is being held, was just released, or is on stand by. It took a little bit of finicking
+            since my implementation Buttons was different from my previous implementations, but once I got it working, it was better than what I had before,
+            but could have been made better still.
+        </p>
+        <br><br> <b>Worklog 7 Camera and Buttons (Feb 28, 2021):</b> <br><br>
+        <p> 
+            Today I did a bit more fine tuning to my StateMachine and other state classes to try to optimize the code's readability, as well as
+            start on a Camera and Button class. Buttons are something I have sucessfully implemented in previous projects, but not a Camera. that's why it took
+            a bit of extra hastling and time to get an sf::View set up and working. Regardless, today was pretty productive.
+            <a href="https://github.com/pritzza/Pritzza-Engine/commit/7e360fdb45cba65ef8570262eb14039d5355b2d0">(deleted 38 lines and added 175 new lines, 692 lines in total).</a>
+        </p>
+        <br><br> <b>Worklog 6 Resource Manager (Feb 27, 2021):</b> <br><br>
+        <p> 
+            Since everything up to this point had mostly been boilerplate code, I thought I would get the last bit of boilerplate out of the way
+            and I implemented most of a Resource Manager class. Again like my State Machine class, I had mostly followed my previous designs, but this time
+            I tried something new, as I'm always trying to write better, cleaner, more efficient code. Anyways, that something new was a template class Resource Manager,
+            basically, instead of writing 3 different, almost identical Resource Managers for graphics, fonts, and audio, I would write a template Resource Manager
+            which would be able to store any one of the three independently, and remain clean, readable, and DRY!
+            <a href="https://github.com/pritzza/Pritzza-Engine/commit/196e92e89ffec075909bb1bd07492d3fd6454b70">(deleted 5 lines and added 192 new lines, 555 lines in total).</a>
+        </p>
+        <br><br> <b>Worklog 5 Refactoring (Feb 26, 2021):</b> <br><br>
+        <p> 
+            Today was spent cleaning up the code I had so far. The State Machine Operation design I had come up with on the fly yesterday worked, 
+            but wasn't perfect by any means. I went through and did some refactoring, renaming methods, changing data member accessibility of some classes and
+            writting getters, renaming State Machine Operation back to State Machine Event, but keeping the design the same. Basically, I'm always trying
+            to write the best code possible, and I saw that what I had written the past couple of days could've been better, so I did everything I
+            could to make it as readable and maintainable as possible. I was happy with myself afterward
+            <a href="https://github.com/pritzza/Pritzza-Engine/commit/8e83349b117f68ed135f3896a6773323d75375fe">(deleted 70 lines and added 90 new lines, 368 lines in total).</a>
+        </p>
+        <br><br> <b>Worklog 4, State Shenanigans (Feb 25, 2021):</b> <br><br>
+        <p> 
+            After implementing my new State Machine design, I wrote a State abstract class, and a Game class that implemented the state class.
+            Having made a State Machine class, and states for it, I needed to create some event system to be able to add, remove, and change
+            the states existing in the State Machine, so I created a State Machine Operation class. With the State Machine Operation class,
+            I tried to implement a new design on the fly, which I thought was better then the previous event system style designs I had
+            written before. At the end of the day, I committed everything I had to Github for the first time 
+            <a href="https://github.com/pritzza/Pritzza-Engine/commit/ea2bc9fb4510b21b7798a9c333d94c80a1fd6529">(348 lines of code!).</a>
+            
+        </p>
+        <br><br> <b>Worklog 3, Finally Starting (Feb 23, 2021):</b> <br><br>
+        <p> 
+            Finally got to work beginning to implement what I had planned earlier. With a bit of frustration and trial and error,
+            I had gotten the cleanest State Machine implementation I had ever written. This was not my first time implementing such
+            a thing, but what caused some frustration was me trying to incorperate smart pointers into the design. Smart pointers are something
+            I've never worked with before, but are considered a best practice in modern C++ development. I was happy to get it working in the end though!
+        </p>
+        <br><br> <b>Worklog 2, Setting Up (Feb 22, 2021):</b> <br><br>
+        <p> 
+            Today was spent setting up the project. I had to get my C++ Visual Studio and SFML development environment set up.
+            After linking all of the SFML libraries with the Visual Studio project, I took some time to create a template project
+            so that I wouldn't need to go through with reconfiguring Visual Studio project C++ and link setting ever again.
+            Additionally, at the end of setting up the project, I got some quick SFML sample code to verify everything was working, 
+            and got a nice green square to appear on an SFML window.
+        </p>
+        <br><br> <b>Worklog 1, Planning (Feb 21, 2021):</b> <br><br>
+        <p>
+            Spent the day doing a little bit of research to help plan the initial structure of my engine.
+            Figured I would follow a similar design to what I had seen in other people's engines, using a state machine design pattern to help structure 
+            the most basic elements of the engine. Sketched out a rough idea of the class structure and hierarchy of the classes I would need to design
+            and implement, including the Game/Application class, State Machine class, State abstract class, and Window class.
+        </p>
+        <br><br>
     </div>
 
 </div>
